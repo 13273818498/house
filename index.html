@@ -61,9 +61,90 @@
             </p>
         </div>
     </div>
+    <!-- 热门2 -->
+    <div class="list">
+        <div class="pic"><img src="./image/index/img2.png" alt=""></div>
+        <div class="text">
+            <h3>文化部中间层 一层带阁楼</h3>
+            <p>2室1厅96㎡南北 <strong>1105万</strong></p>
+            <p>红庙北里 <span>14268元/平</span></p>
+            <p>
+                <a href="#">学区房</a>
+                <a href="#">独家</a>
+                <a href="#">学区房</a>
+            </p>
+        </div>
+    </div>
+    <!-- 热门3 -->
+    <div class="list a">
+        <div class="pic"><img src="./image/index/img3.png" alt=""></div>
+        <div class="text">
+            <h3>文化部中间层 一层带阁楼</h3>
+            <p>2室1厅96㎡南北 <strong>1105万</strong></p>
+            <p>红庙北里 <span>14268元/平</span></p>
+            <p>
+                <a href="#">学区房</a>
+                <a href="#">独家</a>
+            </p>
+        </div>
+    </div>
+    <!-- dh dh dh -->
+    <div class="dh">
+        <div class="box1">热门关注</div>
+        <div class="box2">友情链接</div>
+    </div>
+    <div class="list2">
+        <div class="li1">
+            <a href="#">北京二手房</a>
+            <a href="#">南京二手房</a>
+            <a href="#">上海二手房</a>
+            <a href="#">杭州二手房</a>
+        </div>
+        <div class="li2"><a href="#">北京找房无忧</a>
+            <a href="#">青年住房</a>
+            <a href="#">免税房源</a>
+            <a href="#">杭州找房无忧</a>
+        </div>
+    </div>
+    <!-- footer -->
+    <div>
+        <div class="fon">北京找房无忧 > 首页</div>
+        <div class="footer">
+            <div class="foo">
+                <div class="l"><img src="./image/index/apple.png" alt=""></div>
+                <div class="r">
+                    <p>Iphone</p>
+                    <p>客户端</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="foo">
+                <div class="l"><img src="./image/index/android.png" alt=""></div>
+                <div class="r">
+                    <p>Iphone</p>
+                    <p>客户端</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bu">
+        <p>北京租房网找房无忧</p>
+        <p>网络经营许可证rgdg12345</p>
+    </div>
+    <!-- folrt -->
+    <div class="flort">
+        <img src="./image/index/close.png" alt="" class="tc">
+        <a href="#"><img src="./image/index/download.png" alt=""></a>
+        <a href="#">
+            <p>找房无忧</p>
+            <p>市场行情一应掌握</p>
+        </a>
+        <a href="#"><button>免费下载</button></a>
+    </div>
 </body>
 
 </html>
+<script src="./26css/touch.min.js"></script>
 <script>
     // function setRem() {
     //     var ui_w = 375;
@@ -73,4 +154,10 @@
     //     html.style.fontSize = (client_w / ui_w) * 10 + 'px';
     // }
     // window.onresize = setRem;
+
+    var flort = document.getElementsByClassName('flort')[0]
+    var tc = document.getElementsByClassName('tc')[0]
+    touch.on(tc, 'tap', function () {
+        flort.style.display = 'none'
+    })
 </script>
