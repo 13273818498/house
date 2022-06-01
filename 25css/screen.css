@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.search {
+    width: 90%;
+    height: 2.8rem;
+    border-radius: .7rem;
+    box-sizing: border-box;
+    margin: .6rem auto;
+    background-color: white;
+    border: .1rem solid #ccc;
+    position: relative;
+}
+
+.search input {
+    width: 75%;
+    height: 2.3rem;
+    border: none;
+    position: absolute;
+    top: .2rem;
+    left: 1rem;
+    border-right: .1rem solid #ccc;
+    outline: none;
+}
+
+.search button {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    position: absolute;
+    top: .3rem;
+    right: 1.5rem;
+    background: url(../image/index/seach.jpg) no-repeat;
+}
+
+.nav {
+    width: 100%;
+    height: 3rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    background-color: white;
+}
+
+.nav>ul {
+    display: flex;
+    line-height: 3rem;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #66666E;
+}
+
+.nav ul li {
+    position: relative;
+}
+
+.nav ul li div {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: .4rem solid #66666E;
+    border-bottom: .4rem solid white;
+    border-left: .4rem solid white;
+    border-right: .4rem solid white;
+    position: absolute;
+    top: 1rem;
+    left: 3.2rem;
+}
+
+/* 商品详情 */
+.detail li {
+    width: 90%;
+    height: 10rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    border-bottom: 1px solid #FF8A00;
+}
+
+.detail li:nth-of-type(3) {
+    border: none;
+}
+
+.detail li div:nth-of-type(1) {
+    width: 30%;
+}
+
+.detail li div:nth-of-type(1)>img {
+    width: 100%;
+    height: 100%;
+}
+
+.detail li div:nth-of-type(2) {
+    width: 68%;
+    padding-left: .7rem;
+    line-height: 1.3rem;
+    font-size: 14px;
+}
+
+.detail li div:nth-of-type(2) h4 {
+    padding-top: 1rem;
+}
+
+.detail li div:nth-of-type(2) p {
+    color: #66666E;
+    font-weight: 900;
+}
+
+.detail li div:nth-of-type(2) p strong {
+    color: #FF8A00;
+    font-weight: 900;
+}
