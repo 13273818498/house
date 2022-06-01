@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    min-width: 300px;
+    font-size: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.header {
+    width: 100%;
+    height: 5rem;
+    /* border: 1px solid #000; */
+    background-color: rgb(255, 138, 0);
+    position: relative;
+}
+
+.header>img:nth-of-type(1) {
+    width: 12rem;
+    position: absolute;
+    top: .5rem;
+    left: 3.5rem;
+}
+
+.header>img:nth-of-type(2) {
+    width: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 9rem;
+}
+
+.header>img:nth-of-type(3) {
+    width: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+}
+
+/* <!-- 图片 --> */
+.img {
+    width: 100%;
+}
+
+.img>img {
+    width: 100%;
+}
+
+/* <!-- 图片介绍信息 --> */
+.text {
+    width: 100%;
+    background-color: white;
+    padding: 2rem 0;
+}
+
+.text>h3 {
+    width: 90%;
+    margin: auto;
+    font-size: 1.8rem;
+}
+
+.text>p {
+    width: 90%;
+    margin: auto;
+    margin-top: .7rem;
+}
+
+.text>p:nth-of-type(1) {
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.text>p:nth-of-type(1)>span {
+    color: rgb(147, 5, 5);
+}
+
+.text>p:nth-of-type(1)>img {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    width: 1.3rem;
+}
+
+.text>p:nth-of-type(2) {
+    padding-top: .5rem;
+    font-size: 1.2rem;
+    color: rgb(155, 155, 155);
+}
+
+.text>p:nth-of-type(3) {
+    padding-top: .5rem;
+    overflow: hidden;
+}
+
+.text>p:nth-of-type(3)>a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .2rem 1rem;
+    line-height: 2rem;
+    border-radius: .3rem;
+    background-color: rgb(226, 246, 253);
+    color: rgb(161, 161, 161);
+}
+
+/* <!-- 详情 --> */
+
+.list {
+    width: 100%;
+    background-color: white;
+    margin-top: 2rem;
+}
+
+.list>ul {
+    list-style: none;
+}
+
+.list>ul>li {
+    width: 90%;
+    margin: auto;
+    font-size: 1.3rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.list>ul>li>div {
+    display: flex;
+}
+
+.list>ul>li>div>span {
+    flex: 1;
+}
+
+.a {
+    color: rgb(172, 172, 172);
+    text-align: center;
+}
+
+/* <!-- 房源特色 --> */
+.content {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.content>h2 {
+    width: 90%;
+    margin: auto;
+    font-size: 1.8rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: rgb(255, 138, 0);
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.content>p {
+    padding: 2rem 0;
+    width: 90%;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    height: 10rem;
+    color: rgb(51, 51, 50);
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.content>p:nth-of-type(2) {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: 1.2rem;
+    height: 1rem;
+    line-height: 1rem;
+    color: rgb(131, 131, 131);
+    /* border-bottom: 1px solid rgb(212, 212, 212); */
+}
+
+.content4,
+.content5,
+.content6 {
+    background: #fff;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 1.2rem;
+    padding: 0 2rem;
+}
+
+.content4>h2 {
+    font-size: 1.8rem;
+    line-height: 5rem;
+    color: #ff9326;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.content4 li {
+    padding: 2rem 0;
+    border-bottom: 1px solid #ff8a00;
+    overflow: hidden;
+}
+
+.content4 li:last-of-type {
+    border-bottom: none;
+}
+
+.content4 li .left {
+    width: 24%;
+    float: left;
+}
+
+.content4 li .right {
+    width: 68%;
+    float: left;
+    margin-left: 1rem;
+}
+
+.content4 .left img {
+    width: 7.1rem;
+    height: 7.1rem;
+}
+
+.content4 li .right h2 {
+    font-size: 1.4rem;
+}
+
+.content4 li .right p:first-of-type {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 3.3rem;
+}
+
+.content4 li .right p {
+    font-size: 1.2rem;
+}
+
+.content4 li .right p:last-of-type span {
+    padding: 0.5rem;
+    color: #849aae;
+    background: #f4f7f9;
+    margin-right: 0.6rem;
+    display: inline-block;
+}
+
+.content5>h2 {
+    line-height: 5rem;
+    font-size: 1.8rem;
+}
+
+.content5 li {
+    font-size: 1.2rem;
+    line-height: 5rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.content5 li span {
+    color: #999;
+}
+
+.content5 li:last-of-type {
+    text-align: center;
+}
+
+.content5 li:last-of-type a {
+    color: #a1a1a1;
+
+}
+
+.content6>h2 {
+    line-height: 5.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 1.8rem;
+}
+
+.content6 div {
+    margin: 2rem 0;
+}
+
+.content6 div img {
+    width: 100%;
+}
+
+.content7 {
+    background: #fff;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 1.2rem;
+}
+
+.content7>h2 {
+    line-height: 5rem;
+    padding-left: 2rem;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 1.8rem;
+}
+
+.houseList {
+    margin: 0 2rem;
+}
+
+.houseList li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem 0; */
+    border-bottom: 1px solid red;
+}
+
+.houseList li:last-of-type {
+    border-bottom: none;
+}
+
+.houseList li .img {
+    width: 13rem;
+}
+
+.houseList li .img img {
+    width: 8rem;
+    height: 8rem;
+
+}
+
+.houseList li .text h3 {
+    font-size: 1.8rem;
+    width: 15rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.houseList li .text p {
+    font-size: 1.2rem;
+    padding: 0.3rem 0;
+    color: #000;
+    overflow: hidden;
+
+}
+
+.houseList li .text p:nth-of-type(2) {
+    color: #8b8b8b;
+}
+
+.houseList li .text strong {
+    color: #ff8a00;
+    float: right;
+}
+
+.houseList li .text p:nth-of-type(2) span {
+    color: #999999;
+    float: right;
+}
+
+.houseList li .text p a {
+    color: #849aae;
+    background: #f4f7f9;
+    padding: 0.2rem 0.4rem;
+}
+
+.houseList li {
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.houseList li .tips {
+    position: absolute;
+    bottom: 1.6rem;
+    left: 0;
+    background: #f2f2f2;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.houseList li .tips span {
+    position: absolute;
+    top: -1.8rem;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid #f2f2f2;
+    border-left: 1rem solid transparent;
+    z-index: 10;
+    margin-left: 0.4rem;
+
+}
+
+.content7 .more {
+    line-height: 5rem;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    font-size: 1.2rem;
+}
+
+.fon {
+    width: 94%;
+    height: 5rem;
+    line-height: 4.9rem;
+    padding-left: 2rem;
+    color: rgb(193, 193, 193);
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: rgb(47, 49, 48);
+}
+
+.footer {
+    background-color: rgb(47, 49, 48);
+    width: 100%;
+    height: 10rem;
+    display: flex;
+}
+
+.foo {
+    flex: 1;
+    display: flex;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+
+.foo>.l {
+    flex: 1;
+    text-align: center;
+}
+
+.foo>.l>img {
+    width: 2.5rem;
+}
+
+.foo>.r {
+    flex: 2;
+}
+
+.foo>.r>p {
+    color: rgb(202, 202, 202);
+    font-size: 1.4rem;
+}
+
+.bu {
+    width: 100%;
+    background-color: rgb(47, 49, 48);
+    height: 5rem;
+}
+
+.bu>p {
+    color: rgb(192, 192, 192);
+    /* padding-top: 1rem; */
+    text-align: center;
+    font-size: 1.2rem;
+    /* padding-bottom: 1rem; */
+}
+
+.agent {
+    width: 88%;
+    height: 5rem;
+    line-height: 5rem;
+    padding: 1rem 2rem;
+}
+
+.agent a:first-of-type {
+    display: inline-block;
+    width: 20rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background: #ff8a00 url("../image/SecondHandList/user.png") 3rem center no-repeat;
+    background-size: 2.5rem 2.5rem;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
+.agent a:last-of-type {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    background: url("../image/SecondHandList/xin.png") 0 center no-repeat;
+    background-size: 2.5rem 2.5rem;
+    padding-left: 3rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}

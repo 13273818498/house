@@ -50,7 +50,7 @@ html {
 }
 
 .k {
-    width: 32rem;
+    width: 28rem;
     height: 3rem;
     border: 1px solid #000;
     border-radius: 1rem;
@@ -69,7 +69,7 @@ html {
 
 .k>input {
     font-size: 1.6rem;
-    width: 24rem;
+    width: 20rem;
     height: 3rem;
     border: none;
     outline: none;
@@ -120,7 +120,7 @@ a {
 
 /* <!-- 5热门房源 --> */
 .hot {
-    width: 95%;
+    width: 94%;
     height: 8rem;
     background-color: rgb(255, 138, 0);
     display: flex;
@@ -294,7 +294,7 @@ a {
 /*  */
 
 .fon {
-    width: 95%;
+    width: 94%;
     height: 5rem;
     line-height: 4.9rem;
     padding-left: 2rem;
@@ -338,7 +338,7 @@ a {
 }
 
 .bu {
-    width: 100%;
+    width: 98%;
     background-color: rgb(47, 49, 48);
     height: 5rem;
 }

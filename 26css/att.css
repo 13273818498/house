@@ -5,7 +5,7 @@
 
 body,
 html {
-    /* min-width: 300px; */
+    min-width: 300px;
     font-size: 10px;
     background-color: rgb(245, 245, 245);
 }
@@ -103,7 +103,7 @@ html {
 .text>p:nth-of-type(2)>strong {
     position: absolute;
     bottom: 0rem;
-    right: 1rem;
+    right: 0rem;
     font-size: 1.4rem;
     color: rgb(255, 138, 0);
 }
@@ -128,7 +128,7 @@ html {
 } */
 /* ddddddd */
 .fon {
-    width: 95%;
+    width: 94%;
     height: 5rem;
     line-height: 4.9rem;
     padding-left: 2rem;

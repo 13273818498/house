@@ -146,14 +146,22 @@
 </html>
 <script src="./26css/touch.min.js"></script>
 <script>
-    // function setRem() {
-    //     var ui_w = 375;
-    //     var client_w = document.documentElement.clientWidth || document.body.clientWidth;
-
-    //     var html = document.querySelector('html');
-    //     html.style.fontSize = (client_w / ui_w) * 10 + 'px';
-    // }
-    // window.onresize = setRem;
+    (function () {
+        var supportsOrientationChange = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+        var timeoutId;
+        function setRem() {
+            var clientWidth = document.documentElement.clientWidth;
+            var nowPX = clientWidth / 320 * 10;
+            document.documentElement.style.fontSize = nowPX + 'px';
+        }
+        setRem();
+        window.addEventListener(supportsOrientationChange, function () {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(function () {
+                setRem();
+            }, 300);
+        }, false);
+    })();
 
     var flort = document.getElementsByClassName('flort')[0]
     var tc = document.getElementsByClassName('tc')[0]
