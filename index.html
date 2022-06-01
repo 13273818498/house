@@ -6,18 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./25css/base.css">
-    <script src=""></script>
+    <link rel="stylesheet" href="./26css/index.css">
 </head>
 
 <body>
-    <header>
-        <div class="le"><img src="../image/index/logo.jpg" alt=""></div>
-        <div class="rig">
-            <div class="one"><img src="../image/index/my.jpg" alt=""></div>
-            <div class="two"><img src="../image/index/xiazai.jpg" alt=""></div>
+    <!-- //1 -->
+    <div class="header">
+        <img src="./image/index/logo.jpg" alt="">
+        <img src="./image/index/my.jpg" alt="">
+        <img src="./image/index/xiazai.jpg" alt="">
+    </div>
+    <!-- //2 -->
+    <div class="sou">
+        <div class="k">
+            <img src="./image/index/seach.jpg" alt="">
+            <input type="text" placeholder="输入小区开始找房喽!">
         </div>
-    </header>
+    </div>
+    <!-- //3 -->
+    <div class="lis">
+        <a href="./26/attention.html"><img src="./image/index/index_03.png" alt="">
+            <p>二手房</p>
+        </a>
+        <a href="./26/referrer.html"><img src="./image/index/index_05.png" alt="">
+            <p>新房</p>
+        </a>
+        <a href="./26/house.html"><img src="./image/index/index_07.png" alt="">
+            <p>租房</p>
+        </a>
+        <a href="./26/search.html"><img src="./image/index/index_09.png" alt="">
+            <p>卖房</p>
+        </a>
+    </div>
+    <!-- 4 -->
+    <div class="bann2">
+        <img src="./image/index/banner2.png" alt="">
+    </div>
+
+    <!-- 5热门房源 -->
+    <div class="hot">
+        <p>热门房源</p>
+        <p>hou house</p>
+    </div>
+    <!-- 热门1 -->
+    <div class="list">
+        <div class="pic"><img src="./image/index/img1.jpg" alt=""></div>
+        <div class="text">
+            <h3>文化部中间层 一层带阁楼</h3>
+            <p>2室1厅96㎡南北 <strong>1105万</strong></p>
+            <p>红庙北里 <span>14268元/平</span></p>
+            <p>
+                <a href="#">学区房</a>
+                <a href="#">独家</a>
+            </p>
+        </div>
+    </div>
+    <!-- 热门2 -->
+    <div class="list">
+        <div class="pic"><img src="./image/index/img2.png" alt=""></div>
+        <div class="text">
+            <h3>文化部中间层 一层带阁楼</h3>
+            <p>2室1厅96㎡南北 <strong>1105万</strong></p>
+            <p>红庙北里 <span>14268元/平</span></p>
+            <p>
+                <a href="#">学区房</a>
+                <a href="#">独家</a>
+                <a href="#">学区房</a>
+            </p>
+        </div>
+    </div>
+    <!-- 热门3 -->
+    <div class="list a">
+        <div class="pic"><img src="./image/index/img3.png" alt=""></div>
+        <div class="text">
+            <h3>文化部中间层 一层带阁楼</h3>
+            <p>2室1厅96㎡南北 <strong>1105万</strong></p>
+            <p>红庙北里 <span>14268元/平</span></p>
+            <p>
+                <a href="#">学区房</a>
+                <a href="#">独家</a>
+            </p>
+        </div>
+    </div>
+    <!-- dh dh dh -->
+    <div class="dh">
+        <div class="box1">热门关注</div>
+        <div class="box2">友情链接</div>
+    </div>
+    <div class="list2">
+        <div class="li1">
+            <a href="#">北京二手房</a>
+            <a href="#">南京二手房</a>
+            <a href="#">上海二手房</a>
+            <a href="#">杭州二手房</a>
+        </div>
+        <div class="li2"><a href="#">北京找房无忧</a>
+            <a href="#">青年住房</a>
+            <a href="#">免税房源</a>
+            <a href="#">杭州找房无忧</a>
+        </div>
+    </div>
+    <!-- footer -->
+    <div>
+        <div class="fon">北京找房无忧 > 首页</div>
+        <div class="footer">
+            <div class="foo">
+                <div class="l"><img src="./image/index/apple.png" alt=""></div>
+                <div class="r">
+                    <p>Iphone</p>
+                    <p>客户端</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="foo">
+                <div class="l"><img src="./image/index/android.png" alt=""></div>
+                <div class="r">
+                    <p>Iphone</p>
+                    <p>客户端</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bu">
+        <p>北京租房网找房无忧</p>
+        <p>网络经营许可证rgdg12345</p>
+    </div>
+    <!-- folrt -->
+    <div class="flort">
+        <img src="./image/index/close.png" alt="" class="tc">
+        <a href="#"><img src="./image/index/download.png" alt=""></a>
+        <a href="#">
+            <p>找房无忧</p>
+            <p>市场行情一应掌握</p>
+        </a>
+        <a href="#"><button>免费下载</button></a>
+    </div>
 </body>
 
 </html>
+<script src="./26css/touch.min.js"></script>
+<script>
+    (function () {
+        var supportsOrientationChange = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+        var timeoutId;
+        function setRem() {
+            var clientWidth = document.documentElement.clientWidth;
+            var nowPX = clientWidth / 320 * 10;
+            document.documentElement.style.fontSize = nowPX + 'px';
+        }
+        setRem();
+        window.addEventListener(supportsOrientationChange, function () {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(function () {
+                setRem();
+            }, 300);
+        }, false);
+    })();
+
+    var flort = document.getElementsByClassName('flort')[0]
+    var tc = document.getElementsByClassName('tc')[0]
+    touch.on(tc, 'tap', function () {
+        flort.style.display = 'none'
+    })
+</script>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../26css/referrer.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <!-- //1 -->
+    <div class="header">
+        <img src="../image/index/logo.jpg" alt="">
+        <img src="../image/index/my.jpg" alt="">
+        <img src="../image/index/xiazai.jpg" alt="">
+    </div>
+    <div class="back">
+        首页 > 我的搜索
+    </div>
+    <!-- 搜索框 -->
+    <div class="input">
+        <div class="inp2">
+            <input type="text">
+            <span>|</span>
+            <img src="../image/SecondHandList/search_03.png" alt="">
+        </div>
+    </div>
+    <!-- 下拉框 -->
+    <div class="sele">
+        <select>
+            <option value="">区域</option>
+            <option value="">附近</option>
+            <option value="">金水区</option>
+        </select>
+        <select>
+            <option value="">月租</option>
+            <option value="">2000</option>
+            <option value="">3000</option>
+            <option value="">3000以上</option>
+        </select>
+        <select>
+            <option value="">房型</option>
+            <option value="">一室</option>
+            <option value="">两室</option>
+            <option value="">三室</option>
+        </select>
+        <select>
+            <option value="">更多</option>
+            <option value="">区域</option>
+            <option value="">面积</option>
+            <option value="">标签</option>
+        </select>
+
+    </div>
+    <!-- 搜索出的内容 -->
+    <!-- 热门1 -->
+    <div class="list">
+        <div class="pic"><img src="../image/index/img1.jpg" alt=""></div>
+        <div class="text">
+            <h3>南沙滩小区，低价急售</h3>
+            <p>2室1厅96㎡南北 </p>
+            <p>红庙北里</p>
+            <p>
+                <a href="#">集中供暖</a>
+            </p>
+            <strong>3700元/月</strong>
+        </div>
+    </div>
+    <!-- 热门2 -->
+    <div class="list">
+        <div class="pic"><img src="../image/index/img1.jpg" alt=""></div>
+        <div class="text">
+            <h3>青年居三期，免税</h3>
+            <p>2室1厅96㎡南北 </p>
+            <p>红庙北里</p>
+            <p>
+                <a href="#">天然气供暖</a>
+            </p>
+            <strong>2900元/月</strong>
+        </div>
+    </div>
+    <!-- 热门3 -->
+    <div class="list">
+        <div class="pic"><img src="../image/index/img1.jpg" alt=""></div>
+        <div class="text">
+            <h3>比亚迪下三期，急租</h3>
+            <p>2室1厅96㎡南北 </p>
+            <p>红庙北里</p>
+            <p>
+                <a href="#">天然气供暖</a>
+            </p>
+            <strong>4700元/月</strong>
+        </div>
+    </div>
+    <!-- 热门4 -->
+    <div class="list">
+        <div class="pic"><img src="../image/index/img1.jpg" alt=""></div>
+        <div class="text">
+            <h3>长阳路赠车库</h3>
+            <p>2室1厅96㎡南北 </p>
+            <p>红庙北里</p>
+            <p>
+                <a href="#">集中供暖</a>
+            </p>
+            <strong>3500元/月</strong>
+        </div>
+    </div>
+    <!-- 热门5 -->
+    <div class="list">
+        <div class="pic"><img src="../image/index/img1.jpg" alt=""></div>
+        <div class="text">
+            <h3>南沙滩小区，低价急售</h3>
+            <p>2室1厅96㎡南北 </p>
+            <p>红庙北里</p>
+            <p>
+                <a href="#">集中供暖</a>
+            </p>
+            <strong>4500元/月</strong>
+        </div>
+    </div>
+    <!-- ddddd -->
+    <div>
+        <div class="fon">北京找房无忧 > 首页</div>
+        <div class="footer">
+            <div class="foo">
+                <div class="l"><img src="../image/index/apple.png" alt=""></div>
+                <div class="r">
+                    <p>Iphone</p>
+                    <p>客户端</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="foo">
+                <div class="l"><img src="../image/index/android.png" alt=""></div>
+                <div class="r">
+                    <p>Iphone</p>
+                    <p>客户端</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bu">
+        <p>北京租房网找房无忧</p>
+        <p>网络经营许可证rgdg12345</p>
+    </div>
+</body>
+
+</html>
+<script>
+
+    (function () {
+        var supportsOrientationChange = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+        var timeoutId;
+        function setRem() {
+            var clientWidth = document.documentElement.clientWidth;
+            var nowPX = clientWidth / 320 * 10;
+            document.documentElement.style.fontSize = nowPX + 'px';
+        }
+        setRem();
+        window.addEventListener(supportsOrientationChange, function () {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(function () {
+                setRem();
+            }, 300);
+        }, false);
+    })();
+</script>
