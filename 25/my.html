@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../25css/base.css">
+    <link rel="stylesheet" href="../25css/my.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <div class="le"><img src="../image/index/logo.jpg" alt=""></div>
+        <div class="rig">
+            <div class="one"><img src="../image/index/my.jpg" alt=""></div>
+            <div class="two"><img src="../image/index/xiazai.jpg" alt=""></div>
+        </div>
+    </header>
+    <section>
+        <ul>
+            <li> <a href=""> <strong>首页</strong> </a>&nbsp;<strong>></strong> &nbsp; <a href="">我的</a></li>
+            <li>
+                <div><img src="../image/my/urse2.png" alt="">
+                    <p>欢迎你, <span class="tell"> 18686868686</span></p>
+                </div>
+            </li>
+            <li>我关注的房源<i></i></li>
+            <li>我关注的小区<i></i></li>
+            <li>我的看房记录<i></i></li>
+        </ul>
+    </section>
+    <div class="footer"><button class="quit">退出登录</button></div>
+
+</body>
+
+</html>
+<script>
+    function setRem() {
+        var ui_w = 375;
+        var client_w = document.documentElement.clientWidth || document.body.clientWidth;
+
+        var html = document.querySelector('html');
+        html.style.fontSize = (client_w / ui_w) * 10 + 'px';
+    }
+    window.onresize = setRem;
+</script>
+<script src="../25JS/touch.min.js"></script>
+<script src="../25JS/myCookie.js"></script>
+<script>
+    var quit = document.getElementsByClassName("quit")[0];
+    // console.log(quit);
+    touch.on(quit, 'tap', function () {
+        // console.log('3');  可以正常获取
+        var x = confirm('您确定要退出登录吗？')
+        if (x == true) {
+            // console.log('4');
+            window.location.href = "http://127.0.0.1:5500/25/login.html";
+        }
+    })
+    // 回显     找到localStorage的名字
+    var x = localStorage.getItem('phone');
+    // console.log(x);
+    var tell_ = document.getElementsByClassName("tell")[0];
+    tell_.innerHTML = x;
+</script>

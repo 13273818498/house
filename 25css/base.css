@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    background-color: #E7EAED;
+    min-width: 300px;
+}
+
+ul,
+li {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 头部 */
+header {
+    width: 100%;
+    height: 5rem;
+    background-color: #FF8A00;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.le {
+    width: 40%;
+    height: 100%;
+    background-size: 100%;
+    align-items: center;
+    margin-top: .7rem;
+}
+
+.le>img {
+    width: 10rem;
+}
+
+.rig {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.3rem;
+}
+
+.rig .one,
+.rig .two {
+    width: 40%;
+    height: 100%;
+}
+
+.rig .one>img,
+.rig .two>img {
+    width: 2rem;
+}
+
+/* 底部 */
+footer {
+    width: 100%;
+    height: 10rem;
+    background-color: #2F3130;
+    color: #797A7A;
+    box-sizing: border-box;
+}
+
+footer>div:nth-of-type(1) {
+    width: 90%;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #918F8A;
+    margin: 0rem auto;
+    font-size: 14px;
+}
+
+footer>div:nth-of-type(1) a {
+    color: #797A7A;
+    font-weight: 900;
+}
+
+footer>div:nth-of-type(3) {
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .middle {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    padding-top: .5rem;
+}
+
+.middle p i {
+    display: inline-block;
+    width: 37px;
+    height: 43px;
+    padding-right: 20px;
+}
+
+.ia {
+    background: url(../image/index/apple.png) no-repeat;
+}
+
+.ib {
+    background: url(../image/index/android.png) no-repeat;
+}
+
+i {
+    font-style: normal;
+}

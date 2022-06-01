@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../25css/forgotPwd.css">
+    <link rel="stylesheet" href="../25css/base.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <div class="le"><img src="../image/index/logo.jpg" alt=""></div>
+        <div class="rig">
+            <div class="one"><img src="../image/index/my.jpg" alt=""></div>
+            <div class="two"><img src="../image/index/xiazai.jpg" alt=""></div>
+        </div>
+    </header>
+    <section>
+        <ul>
+            <li> <a href=""> <strong>首页</strong> </a>&nbsp;<strong>></strong> &nbsp; <a href="">找回密码</a> </li>
+            <li><input type="text" placeholder="请输入手机号码" required class="phnum"> <button class="send">发送验证码</button>
+            </li>
+            <li><input type="text" placeholder="请输入短信中的验证码" required></li>
+            <li><input type="password" placeholder="请输入新密码" required class="psd1"></li>
+            <li><input type="password" placeholder="再次确认新密码" required class="psd2"></li>
+        </ul>
+    </section>
+    <div class="footer"> <button>提交</button></div>
+
+
+</body>
+
+</html>
+<script>
+    function setRem() {
+        var ui_w = 375;
+        var client_w = document.documentElement.clientWidth || document.body.clientWidth;
+
+        var html = document.querySelector('html');
+        html.style.fontSize = (client_w / ui_w) * 10 + 'px';
+    }
+    window.onresize = setRem;
+</script>
+<script src="../25JS/touch.min.js"></script>
+<script src="../25JS/jquery-3.5.1.min.js"></script>
+<script>
+    // 2.获取手机号和密码
+    var phnum = document.getElementsByClassName('phnum')[0];
+    var psd1 = document.getElementsByClassName("psd1")[0];
+    var psd2 = document.getElementsByClassName('psd2')[0];
+    // console.log(phnum, psd1, psd2);
+    // 手机号
+    touch.on(phnum, 'tap', function () {
+        var reg1 = /^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/;
+        phnum.ontouchstart = function () {
+            if (phnum.value == '') {
+                phnum.value = '请输入11位手机号';
+            }
+        }
+        phnum.ontouchend = function () {
+            if (!reg1.test(phnum.value)) {
+                // phnum.value = "手机号错误"
+                alert('手机号错误')
+            }
+        }
+    })
+    // 新密码
+    var reg2 = /^[a-z0-9]{6,8}$/;
+    touch.on(psd1, 'tap', function () {
+        if (psd1.value == '') {
+            alert('密码6-8个字符,包含小写字母和数字')
+        } else if (!reg2.test(psd1.value)) {
+            alert('密码不合法');
+        }
+    })
+    // 确认密码
+    touch.on(psd2, 'doubleclick', function () {
+        if (!psd1.value == psd2.value) {
+            alert("两次密码不一致");
+        }
+    })
+    // 1.设置验证码
+    var min = 60;
+    var time;
+    var send_ = document.getElementsByClassName("send")[0];
+    console.log(send_);
+    touch.on(send_, 'tap', function () {
+        if (phnum.value == '') {
+            alert("请输入手机号")
+        } else {
+            clearInterval(time);
+            time = setInterval(function fn() {
+                min = --min;
+                if (min > 0) {
+                    send_.innerHTML = +min + 's后重发'
+                    if (min == 57 || min == 56 || min == 55) {
+                        send_.innerHTML = '验证码是4535'
+                    }
+                } else {
+                    min = 60;
+                    send_.innerHTML = '重新发送';
+                    clearInterval(time);
+                }
+            }, 1000);
+        }
+    })
+    // 3.提交以后去登录页
+    var tj = $(".footer  button");
+    // console.log(tj);
+    touch.on(tj, 'tap', function () {
+        if (phnum.value !== '' && psd1.value !== '' && psd2.value !== '') {
+            window.location.href = 'http://127.0.0.1:5500/25/switchLogin.html';
+        } else {
+            alert('请完善您的信息');
+        }
+
+    })
+    // 解决点透
+    // document.addEventListener('touchend', function (e) {
+    //     // 可以阻止本次点击系统触发的click事件
+    //     e.preventDefault();
+    // }, false);
+</script>
