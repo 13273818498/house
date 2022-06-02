@@ -23,7 +23,7 @@
         <p><strong>首页</strong> > <span>我的</span> > <span>登录</span></p>
     </section>
     <div class="registerForm  login">
-        <form action="#">
+        <form action="./login.html">
             <ul class="check">
                 <li class="act">普通登录</li>
                 <li>验证码快捷登录</li>
@@ -37,8 +37,8 @@
                 </ul>
                 <input class="registerBtn" type="submit" value="立即登录" />
                 <div class="tiShi">
-                    <a href="#">立即注册</a>
-                    <a href="#">忘记密码</a>
+                    <a href="./register.html">立即注册</a>
+                    <a href="./forgotPwd.html">忘记密码</a>
                 </div>
             </div>
             <div class="fastLogin " style="display: none;">
@@ -51,8 +51,8 @@
                 </ul>
                 <input class="registerBtn" type="submit" value="验证并登录" />
                 <div class="tiShi">
-                    <a href="#">立即注册</a>
-                    <a href="#">忘记密码</a>
+                    <a href="./register.html">立即注册</a>
+                    <a href="./forgotPwd.html">忘记密码</a>
                 </div>
             </div>
         </form>
@@ -184,6 +184,6 @@
     touch.on(denglu, 'tap', function () {
         // 回显
         localStorage.setItem("phone", phnum.value)
-        window.location.href = 'http://127.0.0.1:5500/25/my.html';
+        window.location.href = 'http://127.0.0.1:5500/25/login.html';
     })
 </script>
